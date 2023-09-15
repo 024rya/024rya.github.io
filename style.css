@@ -230,63 +230,48 @@ main {
 }
 /* section1 */
 .section1 {
+  width: 90%;
+  padding: 0 5%;
   position: sticky;
   font-family: "YekanBakh Regular"; 
   background-color: #fff;
   color: #000000;
   height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
 }
-/*  
-.section1 div {
-  background-color: var(--section1card);
-  width: 22%;
-  height: 400px;
+ 
+.section1div {
+  background-color: #F7F6FA;
+  width: 30%;
+  height: 300px;
   border-radius: 10px;
   margin: 20px 0;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
+  align-items: right;
+  align-content: right;
+  position: relative;
+}
+.section1div div{
+  position: absolute;
+  background-color: #91a4cd;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  top: -30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   align-content: center;
 }
-.section1 img {
-  margin-top: 10px;
-  border-radius: 10px;
-  width: 96%;
-}
-.section1 h3 {
-  margin: 20px 30px 15px 10px;
-  width: 90%;
-  padding: 0 5%;
-  font-family: "YekanBakh Bold";
-  direction: rtl;
-  font-size: 20px;
-  color: #222326;
-}
-.section1 p {
-  margin: 0;
-
-  width: 90%;
-  padding: 0 5%;
-  font-family: "YekanBakh Bold";
-  direction: rtl;
-  font-size: 15px;
-  color: #5a5a5b;
-}
-.section1 button {
-  border: 0;
-  border-radius: 7px;
-  height: 40px;
-  font-family: "YekanBakh Bold";
-  direction: rtl;
-  font-size: 15px;
-  background-color: #25f700;
-  color: #ffffff;
-  margin: 10px 0;
-  padding: 0 15px;
-} */
-/* // */
 .section2 {
   background-color: var(--section2);
   color: var(--section2text);
@@ -327,8 +312,7 @@ main {
 }
 /* /// */
 .section3 {
-  background-color: #006aff;
-  color: var(--section2text);
+  background-color: #3581b8;
   font-family: "YekanBakh Bold";
   width: 90%;
   height: 600px;
@@ -341,14 +325,18 @@ main {
   align-content: flex-end;
 }
 .section3 h3{
+  color: var(--title);
 direction: rtl;
 font-size: 70px;
 margin: 0;
 }
 .section3 p{
+  color: var(--subtitle);
+
 direction: rtl;
-font-size: 30px;
-margin: 0;
+width: 600px;
+font-size: 20px;
+margin: 30px 0 0 0;
 
 }
 /* <span id="s1">+1000</span>
