@@ -231,7 +231,7 @@ main {
 /* section1 */
 .section1 {
   position: sticky;
-  font-family: "YekanBakh Regular";
+  font-family: "YekanBakh Regular"; 
   background-color: #fff;
   color: #000000;
   height: 500px;
@@ -340,15 +340,16 @@ main {
   align-items: center;
   align-content: flex-end;
 }
-.section3 h3 {
-  direction: rtl;
-  font-size: 70px;
-  margin: 0;
+.section3 h3{
+direction: rtl;
+font-size: 70px;
+margin: 0;
 }
-.section3 p {
-  direction: rtl;
-  font-size: 30px;
-  margin: 0;
+.section3 p{
+direction: rtl;
+font-size: 30px;
+margin: 0;
+
 }
 /* <span id="s1">+1000</span>
 <span id="s2">fd</span> */
