@@ -278,11 +278,11 @@ main {
 }
 .section1 h3{
   font-family: "YekanBakh Bold";
-  font-size: 25px;
+  font-size:1.9dvw;
 }
 .section1 p{
-  font-family: "YekanBakh Bold";
-  font-size: 18px;
+  font-family: "YekanBakh regular";
+  font-size: 1.2dvw;
   margin-top: 20px;
 }
 /* /// */
