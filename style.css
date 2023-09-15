@@ -43,8 +43,9 @@ body {
   padding: 0;
   margin: 0;
 }
-.dark-mode {
-  background-color: var(--blue);
+.container{
+  width: 90%;
+  margin: 0 5%;
 }
 header {
   width: 100%;
@@ -233,7 +234,7 @@ main {
   width: 90%;
   padding: 0 5%;
   position: sticky;
-  font-family: "YekanBakh Regular"; 
+  font-family: "YekanBakh Regular";
   background-color: #fff;
   color: #000000;
   height: 500px;
@@ -243,23 +244,25 @@ main {
   justify-content: space-around;
   align-items: center;
   align-content: center;
+  direction: rtl;
 }
- 
+
 .section1div {
-  background-color: #F7F6FA;
+  position: relative;
+  background-color: #f7f6fa;
   width: 30%;
   height: 300px;
   border-radius: 10px;
   margin: 20px 0;
+ direction: rtl;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: right;
-  align-content: right;
-  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
 }
-.section1div div{
+.section1div div {
   position: absolute;
   background-color: #91a4cd;
   width: 100px;
@@ -271,7 +274,18 @@ main {
   justify-content: center;
   align-items: center;
   align-content: center;
+
 }
+.section1 h3{
+  font-family: "YekanBakh Bold";
+  font-size: 25px;
+}
+.section1 p{
+  font-family: "YekanBakh Bold";
+  font-size: 18px;
+  margin-top: 20px;
+}
+/* /// */
 .section2 {
   background-color: var(--section2);
   color: var(--section2text);
@@ -324,20 +338,19 @@ main {
   align-items: center;
   align-content: flex-end;
 }
-.section3 h3{
+.section3 h3 {
   color: var(--title);
-direction: rtl;
-font-size: 70px;
-margin: 0;
+  direction: rtl;
+  font-size: 70px;
+  margin: 0;
 }
-.section3 p{
+.section3 p {
   color: var(--subtitle);
 
-direction: rtl;
-width: 600px;
-font-size: 20px;
-margin: 30px 0 0 0;
-
+  direction: rtl;
+  width: 600px;
+  font-size: 20px;
+  margin: 30px 0 0 0;
 }
 /* <span id="s1">+1000</span>
 <span id="s2">fd</span> */
