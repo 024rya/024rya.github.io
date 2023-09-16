@@ -46,7 +46,7 @@ body {
   width: 90%;
   margin: 0 5%;
 }
-header {
+.header1 {
   width: 100%;
   background: rgb(1, 17, 50);
   background: linear-gradient(

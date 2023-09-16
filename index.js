@@ -8,6 +8,8 @@ function sendemail(params) {
     emailjs.send("service_0v8dcxv", "template_y2itrrr", templateParams).then(
       function (response) {
         alert("با موفقیت ثبت شد به زودی با شما تماس میگیریم");
+        document.getElementById("PhoneNumbererror").innerHTML =
+          "با موفقیت ثبت شد به زودی با شما تماس میگیریم";
         console.log("SUCCESS!", response.status, response.text);
       },
       function (error) {
