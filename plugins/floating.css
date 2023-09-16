@@ -21,8 +21,8 @@
 
 .avatar {
 	position: absolute;
-	width: 600px;
-	height: 600px;
+	width: 400px;
+	height: 400px;
 	overflow: hidden;
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
