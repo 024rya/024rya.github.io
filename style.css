@@ -39,18 +39,21 @@
   --subtitle: rgb(217, 141, 0);
 }
 body {
-
   padding: 0;
   margin: 0;
 }
-.container{
+.container {
   width: 90%;
   margin: 0 5%;
 }
 header {
   width: 100%;
-  background: rgb(1,17,50);
-  background: linear-gradient(0deg, rgba(1,17,50,1) 0%, rgba(0,76,230,1) 70%); 
+  background: rgb(1, 17, 50);
+  background: linear-gradient(
+    0deg,
+    rgba(1, 17, 50, 1) 0%,
+    rgba(0, 76, 230, 1) 70%
+  );
 }
 .header {
   height: 600px;
@@ -235,11 +238,12 @@ main {
 .section1 {
   width: 90%;
   padding: 0 5%;
+  margin: 50px 0;
   position: sticky;
   font-family: "YekanBakh Regular";
   background-color: #fff;
   color: #000000;
-  height: 500px;
+  height: 520px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -256,7 +260,7 @@ main {
   height: 210px;
   border-radius: 10px;
   margin: 20px 0;
- direction: rtl;
+  direction: rtl;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -277,21 +281,20 @@ main {
   justify-content: center;
   align-items: center;
   align-content: center;
-
 }
-.section1 h3{
+.section1 h3 {
   font-family: "YekanBakh Bold";
-  font-size:1.9dvw;
+  font-size: 1.9dvw;
   margin-top: 20px;
 }
-.section1 p{
+.section1 p {
   font-family: "YekanBakh regular";
   font-size: 1.2dvw;
   margin-top: 20px;
 }
 /* /// */
 .section2 {
-  background-color: var(--section2);
+  background-color: #000;
   color: var(--section2text);
   font-family: "YekanBakh Bold";
   font-size: 40px;
@@ -330,7 +333,7 @@ main {
 }
 /* /// */
 .section3 {
-  background-color: #014fef;
+  background-color: #355dac;
   font-family: "YekanBakh Bold";
   width: 90%;
   height: 400px;
@@ -341,6 +344,9 @@ main {
   justify-content: space-between;
   align-items: center;
   align-content: flex-end;
+  -webkit-box-shadow: 0px -4px 32px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -4px 32px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -4px 32px -3px rgba(0, 0, 0, 0.75);
 }
 .section3 h3 {
   color: var(--title);
@@ -358,7 +364,15 @@ main {
 }
 /* <span id="s1">+1000</span>
 <span id="s2">fd</span> */
-.beforefooter{
+.section4 {
+  margin-top: 80px;
+  background: #d7d3ea;
+  height: 350px;
+  border-radius: 10px;
+  color: rgb(45, 53, 67);
+}
+/* /// */
+.beforefooter {
   width: 100%;
   height: 100px;
   margin: 0;
@@ -368,7 +382,7 @@ footer {
   width: 100%;
   height: 100px;
   margin: 0;
-  background-color: #011132;
+  background-color: #121213;
 }
 /*Shrinking for mobile*/
 @media (max-width: 700px) {
@@ -387,5 +401,20 @@ footer {
   .waves {
     height: 40px;
     min-height: 40px;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    direction: rtl;
+  }
+  .section1div {
+    width: 100%;
+  }
+  .section1div h3 {
+    font-size: 23px;
   }
 }
