@@ -257,7 +257,7 @@ main {
   position: relative;
   background-color: #ededed;
   width: 30%;
-  height: 210px;
+  height: 300px;
   border-radius: 10px;
   margin: 20px 0;
   direction: rtl;
@@ -275,7 +275,7 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 20px;
-  top: -50px;
+  top: -60px;
   right: 22px;
   display: flex;
   justify-content: center;
@@ -284,11 +284,13 @@ main {
 }
 .section1 h3 {
   font-family: "YekanBakh Bold";
+  color:#18294b;
   font-size: 1.9dvw;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .section1 p {
   font-family: "YekanBakh regular";
+  color: #363940;
   font-size: 1.2dvw;
   margin-top: 20px;
 }
@@ -370,6 +372,26 @@ main {
   height: 350px;
   border-radius: 10px;
   color: rgb(45, 53, 67);
+}
+input[type="number"] {
+  
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+span {
+  color: red;
+  font-size: 14px;
 }
 /* /// */
 .beforefooter {
