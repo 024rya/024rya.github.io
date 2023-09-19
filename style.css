@@ -284,7 +284,7 @@ main {
 }
 .section1 h3 {
   font-family: "YekanBakh Bold";
-  color:#18294b;
+  color: #18294b;
   font-size: 1.9dvw;
   margin-top: 10px;
 }
@@ -335,7 +335,7 @@ main {
 }
 /* /// */
 .section3 {
-  background-color: #355dac;
+  background-color: #1c54c4;
   font-family: "YekanBakh Bold";
   width: 90%;
   height: 400px;
@@ -372,9 +372,58 @@ main {
   height: 350px;
   border-radius: 10px;
   color: rgb(45, 53, 67);
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
 }
+.section4div1 {
+  margin-right: 20px;
+}
+.section4div1 h3 {
+  font-family: "YekanBakh Bold";
+  font-size: 32px;
+}
+.section4div1 p {
+  font-size: 20px;
+
+  width: 800px;
+}
+.section4div2 {
+  direction: ltr;
+  text-align: center;
+}
+.section4div2 button {
+  font-family: "YekanBakh Bold";
+  font-size: 20px;
+  height: 46px;
+  width: 100px;
+}
+.section4div2 span {
+  font-family: "YekanBakh regular";
+  font-size: 15px;
+  height: 46px;
+  width: 100px;
+}
+.section4div2 input {
+  font-family: "YekanBakh regular";
+  font-size:23px;
+  text-align: center;
+  width: 200px;
+}
+.section4div2 input::-webkit-outer-spin-button,
+.section4div2 input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.section4div2 input[type=number] {
+  -moz-appearance: textfield;
+}
+/* /// */
 input[type="number"] {
-  
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
