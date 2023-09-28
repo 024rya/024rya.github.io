@@ -1,7 +1,419 @@
-[data-theme="light"] {
-  --text: #f0f0f0;
-  --background: #121212;
-  --primary: #b5b5b5;
-  --secondary: #1f1f1f;
-  --accent: #858585;
+@font-face {
+  font-family: "YekanBakh Bold";
+  src: url("./fonts/woff2/YekanBakh-Bold.woff2") format("woff2"),
+    url("./fonts/woff/YekanBakh-Bold.woff") format("woff"),
+    url("myfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "YekanBakh Regular";
+  src: url("./fonts/woff2/YekanBakh-Regular.woff2") format("woff2"),
+    url("./fonts/woff/YekanBakh-Regular.woff") format("woff"),
+    url("myfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "YekanBakh Black";
+  src: url("./fonts/woff2/YekanBakh-Black.woff2") format("woff2"),
+    url("./fonts/woff/YekanBakh-Black.woff") format("woff"),
+    url("myfont.ttf") format("truetype");
+}
+[data-theme="dark"] {
+  --text: #eaf0fb;
+  --background: #191518;
+  --background2: #000000;
+  --backgroundsecondary:#201C1F;
+  --primary: #0052f5;
+  --secondary: #0b1b3c;
+  --accent: #3a6fd9;
+  --accent2: #af00c3;
+  --nav: #191518;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--background);
+}
+.container {
+  width: 90%;
+  margin: 0 5%;
+}
+/* header */
+.header1 {
+  width: 100%;
+  background: linear-gradient(
+    0deg,
+    var(--background) 0%,
+    var(--background2) 100%
+  );
+}
+.header {
+  height: 800px;
+  width: 90%;
+  padding: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+nav {
+  position: absolute;
+  width: 90%;
+  margin-top: 15px;
+  height: 80px;
+  border-radius: 10px;
+  background: var(--nav);
+  /* border: 3px solid var(--primary); */
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.navmainlogo {
+  margin: 0 20px;
+}
+.navtext {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+.navtext div {
+  margin: 0 20px;
+  font-family: "YekanBakh Bold";
+  font-size: 20px;
+  margin: 0 15px;
+
+  text-align: center;
+}
+.navtext a {
+  color: var(--text);
+  text-decoration: none;
+}
+.navtext a:hover {
+  color: var(--primary);
+}
+.navlogo {
+  margin-left: 20px;
+}
+.navlogo svg {
+  margin: 0 5px;
+}
+/* /// */
+
+/* /// */
+.mapzero {
+  margin: 0;
+  padding: 0;
+}
+
+.header h1 {
+  margin-top: 180px !important;
+  font-family: "YekanBakh Bold";
+  font-size: 8rem;
+  color: var(--text);
+  text-align: center;
+}
+.header span {
+  color: var(--primary);
+}
+.header h2 {
+  font-family: "YekanBakh Regular";
+  font-size: 30px;
+  color: var(--text);
+  margin: 30px 0;
+  text-align: center;
+}
+.headerinputdiv {
+  height: 90px;
+  background: #00000000;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.headerbtndiv {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.headerbtn {
+  padding: 15px 35px;
+  margin: 0px 5px;
+  text-decoration: none;
+  align-items: center;
+  background-color: var(--primary);
+  font-family: "YekanBakh Bold";
+  font-size: 17px;
+  color: var(--text);
+  border: 0;
+  border-radius: 7px;
+}
+/* /////////////////////// */
+
+/* /main/ */
+main {
+  width: 100%;
+  padding: 0px 0% 80px 0%;
+}
+/* section1 */
+.section1 {
+  width: 90%;
+  padding: 0 5%;
+  margin: 50px 0;
+  position: sticky;
+  font-family: "YekanBakh Regular";
+  height: 520px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  direction: rtl;
+}
+
+.section1div {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.03);
+  width: 30%;
+  height: 300px;
+  border-radius: 10px;
+  margin:0;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+.section1div div {
+  position: absolute;
+  background-color: var(--accent);
+  color: rgba(255, 255, 255, 0.181);
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  top: -60px;
+  right: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.section1 h3 {
+  font-family: "YekanBakh Bold";
+  color: var(--text);
+  font-size: 1.9dvw;
+  margin-top: 10px;
+}
+.section1 p {
+  font-family: "YekanBakh regular";
+  color: var(--text);
+  font-size: 1.2dvw;
+  margin-top: 20px;
+}
+/* /// */
+.section2 {
+  color: var(--text);
+  background-color: var(--primary);
+  font-family: "YekanBakh Bold";
+  font-size: 40px;
+  width: 90%;
+  height: 300px;
+  padding: 0px 5% 0px 5%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.section2 div {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+  width: 23%;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.section2 div [id="counter"] {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.section2 [id="s1"] {
+  font-family: "YekanBakh Bold";
+  font-size: 70px;
+  text-align: center;
+}
+.section2 [id="s2"] {
+  font-family: "YekanBakh regular";
+  font-size: 21px;
+  text-align: center;
+}
+/* /// */
+.section3 {
+  background-color: var(--secondary);
+
+  font-family: "YekanBakh Bold";
+  width: 90%;
+  height: 400px;
+  margin: 0px 5% 0px 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-end;
+  -webkit-box-shadow: 0px -4px 32px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -4px 32px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -4px 32px -3px rgba(0, 0, 0, 0.75);
+}
+.section3 h3 {
+  color: var(--title);
+  direction: rtl;
+  font-size: 70px;
+  margin: 0;
+}
+.section3 p {
+  color: var(--subtitle);
+
+  direction: rtl;
+  width: 600px;
+  font-size: 20px;
+  margin: 30px 0 0 0;
+}
+/* <span id="s1">+1000</span>
+<span id="s2">fd</span> */
+.section4 {
+  margin-top: 80px;
+  background: #d7d3ea;
+  height: 350px;
+  border-radius: 10px;
+  color: var(--background);
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.section4div1 {
+  margin-right: 20px;
+}
+.section4div1 h3 {
+  font-family: "YekanBakh Bold";
+  font-size: 32px;
+}
+.section4div1 p {
+  font-size: 20px;
+
+  width: 800px;
+}
+.section4div2 {
+  direction: ltr;
+  text-align: center;
+}
+.section4div2 button {
+  font-family: "YekanBakh Bold";
+  font-size: 20px;
+  height: 52px;
+  width: 100px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+}
+
+.section4div2 input {
+  font-family: "YekanBakh regular";
+  font-size: 23px;
+  text-align: center;
+  height: 50px;
+  width: 200px;
+  border-radius: 4px;
+  border: 0;
+}
+.section4div2 input::-webkit-outer-spin-button,
+.section4div2 input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.section4div2 input[type="number"] {
+  -moz-appearance: textfield;
+}
+.section4div2 span {
+  color: red;
+  font-family: "YekanBakh regular";
+  font-size: 15px;
+  height: 46px;
+  width: 100px;
+}
+/* /// */
+.beforefooter {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  background-color: #014fef;
+}
+footer {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  background-color: #121213;
+}
+/*Shrinking for mobile*/
+@media (max-width: 700px) {
+  .body {
+    background-color: #08a767;
+  }
+  nav {
+    height: 60px;
+  }
+  .header h1 {
+    font-size: 32px;
+  }
+  .header h2 {
+    font-size: 17px;
+  }
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    direction: rtl;
+  }
+  .section1div {
+    width: 100%;
+  }
+  .section1div h3 {
+    font-size: 23px;
+  }
 }
