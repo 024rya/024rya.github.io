@@ -20,7 +20,7 @@
   --text: #eaf0fb;
   --background: #191518;
   --background2: #000000;
-  --backgroundsecondary:#201C1F;
+  --backgroundsecondary: #201c1f;
   --primary: #0052f5;
   --secondary: #0b1b3c;
   --accent: #3a6fd9;
@@ -32,7 +32,7 @@ body {
   margin: 0;
   background: var(--background);
 }
-.container {
+.container90 {
   width: 90%;
   margin: 0 5%;
 }
@@ -192,7 +192,7 @@ main {
   width: 30%;
   height: 300px;
   border-radius: 10px;
-  margin:0;
+  margin: 0;
   direction: rtl;
   display: flex;
   flex-direction: column;
@@ -271,35 +271,121 @@ main {
 }
 /* /// */
 .section3 {
-  background-color: var(--secondary);
-
-  font-family: "YekanBakh Bold";
-  width: 90%;
-  height: 400px;
-  margin: 0px 5% 0px 5%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: flex-end;
-  -webkit-box-shadow: 0px -4px 32px -3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px -4px 32px -3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px -4px 32px -3px rgba(0, 0, 0, 0.75);
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: space-evenly;
 }
-.section3 h3 {
-  color: var(--title);
-  direction: rtl;
-  font-size: 70px;
-  margin: 0;
-}
-.section3 p {
-  color: var(--subtitle);
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800, 800i, 900&display=swap");
 
-  direction: rtl;
-  width: 600px;
-  font-size: 20px;
-  margin: 30px 0 0 0;
+
+
+.container {
+  position: relative;
+}
+
+.container .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f4b003;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .card:after {
+  content: "024";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+.container .card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.container .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(-25%);
+  /* bug  */
+}
+
+.container .card .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(20deg);
+  width: 270px;
+}
+
+.container .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 90;
+}
+
+.container .card:hover .contentBx {
+  height: 210px;
+}
+
+.container .card .contentBx h2 {
+  position: relative;
+  font-family: "YekanBakh bold";
+  font-size: 50px;
+  margin-top: 0px;
+  color: #fff;
+}
+
+.container .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 17px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.container .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.2s;
 }
 /* <span id="s1">+1000</span>
 <span id="s2">fd</span> */
