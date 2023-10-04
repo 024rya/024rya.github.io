@@ -451,7 +451,7 @@ footer {
   .section2 {
     font-family: "YekanBakh Bold";
     width: 90%;
-    height: 800px;
+    height: 700px;
     padding: 0px 5% 0px 5%;
     display: flex;
     flex-direction: column;
@@ -461,7 +461,7 @@ footer {
     align-content: stretch;
   }
   .section2 div {
-    padding: 20px 0;
+    padding: 10px 0;
     width: 90%;
     border-radius: 10px;
     text-align: center;
