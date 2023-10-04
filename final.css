@@ -62,53 +62,6 @@ body {
   align-content: center;
 }
 
-nav {
-  position: absolute;
-  width: 90%;
-  margin-top: 15px;
-  height: 80px;
-  border-radius: 10px;
-  background: var(--nav);
-  /* border: 3px solid var(--primary); */
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-}
-.navmainlogo {
-  margin: 0 20px;
-}
-.navtext {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-}
-.navtext div {
-  margin: 0 20px;
-  font-family: "YekanBakh Bold";
-  font-size: 20px;
-  margin: 0 15px;
-
-  text-align: center;
-}
-.navtext a {
-  color: var(--text);
-  text-decoration: none;
-}
-.navtext a:hover {
-  color: var(--primary);
-}
-.navlogo {
-  margin-left: 20px;
-}
-.navlogo svg {
-  margin: 0 5px;
-}
 /* /// */
 
 /* /// */
@@ -380,7 +333,7 @@ footer {
   background-color: #121213;
 }
 /*Shrinking for mobile*/
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .body {
     background-color: #08a767;
   }
@@ -411,5 +364,195 @@ footer {
   }
   .section1div h3 {
     font-size: 23px;
+  }
+} */
+@media only screen and (max-width: 750px) {
+  .header {
+    height: 700px;
+    width: 90%;
+    padding: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* /// */
+
+  .header h1 {
+    margin-top: 150px !important;
+    font-size: 14vw;
+  }
+  .header h2 {
+    font-size: 4.5vw;
+    margin: 30px 0;
+  }
+  .headerbtndiv {
+    margin-top: 70px;
+  }
+  .headerbtn {
+    padding: 15px 35px;
+    margin: 0px 5px;
+    font-size: 12px;
+    border: 0;
+    border-radius: 7px;
+  }
+  /* /////////////////////// */
+
+  /* /main/ */
+  main {
+    width: 100%;
+    padding: 0px 0% 80px 0%;
+  }
+  /* section1 */
+  .section1 {
+    width: 90%;
+    padding: 0 5%;
+    margin: 50px 0;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+  }
+  .section1div {
+    width: 90%;
+    height: 230px;
+    border-radius: 10px;
+    margin: 50px;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+  }
+  .section1div div {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    top: -60px;
+    right: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .section1 h3 {
+    font-size: 6vw;
+    margin-top: 12px;
+  }
+  .section1 p {
+    font-size: 3dvw;
+    margin-top: 15px;
+  }
+  /* /// */
+  .section2 {
+    font-family: "YekanBakh Bold";
+    width: 90%;
+    height: 800px;
+    padding: 0px 5% 0px 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+  }
+  .section2 div {
+    padding: 20px 0;
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .section2 div [id="counter"] {
+    font-size: 50px;
+  }
+  .s2 {
+    margin-top: -25px;
+    font-size: 21px;
+  }
+  /* /// */
+  .section3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+  }
+  .section3title {
+    padding: 70px 0 20px 0;
+    font-family: "YekanBakh Bold";
+    font-size: 70px;
+  }
+  .card {
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+  }
+  .section4 {
+    margin-top: 80px;
+    border-radius: 10px;
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    height: auto;
+  }
+  .section4div1 {
+    text-align: center;
+    margin-right: 20px;
+  }
+  .section4div1 h3 {
+    font-size: 7vw;
+    width: 95%;
+  }
+  .section4div1 p {
+    font-size: 3.7vw;
+    width: 95%;
+    box-sizing: inherit;
+  }
+  .section4div2 button {
+    font-size: 20px;
+    height: 52px;
+    width: 100px;
+    border-radius: 4px;
+    margin: 0 10px 0 0;
+  }
+
+  .section4div2 input {
+    font-size: 23px;
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
+    border: 0;
+  }
+  .section4div2 span {
+    font-size: 15px;
+    height: 46px;
+    width: 100px;
+  }
+  /* /// */
+  .beforefooter {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+  }
+  footer {
+    width: 100%;
+    height: 100px;
+    margin: 0;
   }
 }
